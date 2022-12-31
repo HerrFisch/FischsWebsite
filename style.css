@@ -15,7 +15,7 @@ body {
     font-weight: bold;
 }
 
-#links{
+#links {
     z-index: 2;
     max-width: 675px;
     width: auto;
@@ -23,21 +23,26 @@ body {
     margin: 27px auto;
 }
 
-.link{
-        backdrop-filter: blur(5px);
-        background-color: rgba(0, 0, 0, 0.233);
-        z-index: 9;
-        display: block;
-        color: rgb(255, 255, 255);
-        font-family: var(--font);
-        text-align: center;
-        margin-bottom: 15px;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 20px;
-        transition: all .25s cubic-bezier(.08,.59,.29,.99);
-        position: relative;
-        border-radius: .5em;
+.link {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.233);
+    z-index: 9;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    position: relative;
+    border-radius: .5em;
+    width: 100%;
+}
+
+.link.disabled {
+    pointer-events: none;
 }
 
 .link:hover{
